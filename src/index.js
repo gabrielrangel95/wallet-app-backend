@@ -9,7 +9,7 @@ const routesFinances = require("./routes/finances");
 const app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: ["*", null],
   })
 );
 app.use(express.json());
